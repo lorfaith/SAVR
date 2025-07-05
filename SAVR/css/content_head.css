@@ -1,0 +1,169 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #fff;
+    color: #111;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 100px;   /* Change to your desired width */
+    height: auto;   /* Keeps the aspect ratio */
+    object-fit: cover; 
+}
+
+.nav-links a, .nav-buttons a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #111;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    border-radius: 2rem; 
+    color: #4CAF50;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 0.8rem;
+    background: #f1f1f1;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+}
+
+.nav-buttons a:hover {
+    background-color: #4CAF50; /* Green background */
+    border-radius: 2rem; 
+    padding: 0.1rem 0.8rem; 
+    color: white;
+}
+
+.fresh {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+    background-color: #fff;
+}
+
+.fresh-text {
+    max-width: 50%;
+}
+
+.fresh-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.fresh-text h1 span {
+    color: #4CAF50;
+}
+
+.fresh-text p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #444;
+}
+
+.btn {
+    background-color: #111;
+    color: #fff;
+    padding: 1rem 4rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+.fresh-image {
+    position: relative;
+    width: 40%;
+    height: 300px;
+}
+
+.salad-img {
+    position: relative;
+    width: 400px;
+    z-index: 2;
+}
+
+.lemon, .leaf {
+    position: absolute;
+    width: 80px;
+    z-index: 3;
+}
+
+.lemon1 {
+    position: absolute;
+    top: -35px;
+    right: 350px;
+    z-index: 1; /* below the plate */
+}
+
+.lemon2 {
+    top: 220px;
+    right: 560px;
+}
+
+.leaf1 {
+    bottom: 80px;
+    left: -70px;
+    width: 30px;
+}
+
+.leaf2 {
+    bottom: -100px;
+    right: 100px;
+    transform: scaleX(-1);
+}
+
+.leaf3 {
+    bottom: -50px;
+    right: 50px;
+}
+
+.leaf4 {
+    top: -10px;
+    left: 10px;
+    width: 60px;
+}
+
+.leaf5 {
+    top: 50px;
+    left: -440px;
+}
+
+.leaf6 {
+    top: 100px;
+    left: -480px;
+    transform: scaleX(-1);
+}
+.lemon3 {
+    top: 40px;
+    left: -70px; /* Adjust as needed based on your container width */
+}
+
+.lemon4 {
+    top: 100px;
+    left: -100px;
+}
+
