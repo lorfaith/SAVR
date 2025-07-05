@@ -82,7 +82,7 @@ body {
     color: #fff;
     padding: 1rem 4rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 1.5rem;
     cursor: pointer;
     transition: 0.3s;
@@ -166,4 +166,3 @@ body {
     top: 100px;
     left: -100px;
 }
-

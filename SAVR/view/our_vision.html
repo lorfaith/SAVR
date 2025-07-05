@@ -1,13 +1,144 @@
-  <link rel="stylesheet" href="./css/our_vision.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Vision</title>
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
 
+    body {
+        font-family: 'Arial', sans-serif;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .logo img {
+        width: 100px;   
+        height: auto; 
+        object-fit: cover; 
+    }
+    .vision-container {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 60px 50px;
+        max-width: 800px;
+        width: 100%;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .vision-container::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(102, 126, 234, 0.1) 0%, transparent 70%);
+        animation: rotate 20s linear infinite;
+        z-index: -1;
+    }
+
+    @keyframes rotate {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        background: #4CAF50;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 40px;
+        text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        animation: fadeInUp 1s ease-out;
+    }
+
+    p {
+        font-size: 1.3rem;
+        line-height: 1.8;
+        color: #4a5568;
+        max-width: 700px;
+        margin: 0 auto;
+        animation: fadeInUp 1s ease-out 0.3s both;
+        position: relative;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .vision-container:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .vision-container {
+            padding: 40px 30px;
+            margin: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .vision-container {
+            padding: 30px 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+    </style>
+
+</head>
 <body>
-  <div class="vision-container">
-    <h1>Our Vision</h1>
-    <p>
-      To create a smart, sustainable, and community-driven platform that transforms 
-      surplus near-expiry food into an opportunity to reduce waste, promote food security, 
-      and support environmental and social well-being.
-    </p>
-  </div>
+     <div class="logo">
+      <img src="./img/logo.png" alt="logo">
+    </div>
+    
+    <div class="vision-container">
+        <h1>Our Vision</h1>
+        <p>
+            To create a smart, sustainable, and community-driven platform that transforms 
+            surplus near-expiry food into an opportunity to reduce waste, promote, 
+            and support environmental and social well-being.
+        </p>
+    </div>
 </body>
 </html>

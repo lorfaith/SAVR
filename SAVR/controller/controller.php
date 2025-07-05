@@ -24,14 +24,12 @@ class Controller
             // HOME CASE
             case 'content':
                 include_once('view/content_head.html');
-                echo '<link rel="stylesheet" href="./css/home.css">';
                 break;
 
             //OUR VISION
             case 'our_vision':
-                include_once('view/our_vision.html');
-                echo '<link rel="stylesheet" href="./css/our_vision.css">';
-                break;
+                 include_once('view/our_vision.html'); 
+                 break;
 
             // Default
             default:
