@@ -23,12 +23,22 @@ class Controller
         switch ($command) {
             // HOME CASE
             case 'content':
-                include_once('view/content_head.html');
+                include_once('view/content_head.php');
                 break;
 
             //OUR VISION
             case 'our_vision':
-                 include_once('view/our_vision.html'); 
+                 include_once('view/our_vision.php'); 
+                 break;
+
+            //SIGN IN
+            case 'signin':
+                 include_once('view/signin.php'); 
+                 break;
+
+            //SIGN UP
+            case 'signup':
+                 include_once('view/signup.php'); 
                  break;
 
             // Default

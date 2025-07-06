@@ -1,9 +1,29 @@
-
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     background: #fff;
     color: #111;
+    position: relative;
+}
+
+/* Add background image to the right side */
+.background-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.background-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0);
+    opacity: 100;
 }
 
 .navbar {
@@ -13,10 +33,12 @@ body {
     padding: 2rem 4rem;
     background-color: transparent;
     font-weight: bold;
+    position: relative;
+    z-index: 10; /* Ensure navbar stays above background */
 }
 
 .logo img {
-    width: 100px;   /* Change to your desired width */
+    width: 130px;   /* Increased from 100px */
     height: auto;   /* Keeps the aspect ratio */
     object-fit: cover; 
 }
@@ -25,7 +47,7 @@ body {
     margin: 0 1rem;
     text-decoration: none;
     color: #111;
-    font-size: 1rem;
+    font-size: 1.2rem; /* Increased font size */
 }
 
 .nav-links a:hover {
@@ -39,6 +61,8 @@ body {
     background: #f1f1f1;
     padding: 0.5rem 1rem;
     border-radius: 2rem;
+    position: relative;
+    z-index: 11; /* Ensure buttons stay above background */
 }
 
 .nav-buttons a:hover {
@@ -53,15 +77,19 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 4rem;
-    background-color: #fff;
+    background-color: transparent; /* Changed from #fff to transparent */
+    position: relative;
+    z-index: 5; /* Ensure content stays above background */
 }
 
 .fresh-text {
     max-width: 50%;
+    position: relative;
+    z-index: 6;
 }
 
 .fresh-text h1 {
-    font-size: 3rem;
+    font-size: 3.6rem; /* Increased from 3rem */
     font-weight: bold;
     margin-bottom: 1rem;
     line-height: 1.2;
@@ -72,22 +100,24 @@ body {
 }
 
 .fresh-text p {
-    font-size: 1rem;
-    margin-bottom: 2rem;
+    font-size: 1.2rem; /* Increased font size */
+    margin-bottom: 3rem;
     color: #444;
 }
 
 .btn {
     background-color: #111;
     color: #fff;
-    padding: 1rem 4rem;
+    padding: 1.3rem 5rem; /* Increased padding */
     border: none;
-    border-radius: 15px;
-    font-size: 1.5rem;
+    border-radius: 18px; /* Increased border radius */
+    font-size: 1.7rem; /* Increased font size */
     cursor: pointer;
     transition: 0.3s;
-    margin-left: 50px;
+    margin-left: 0; /* Removed margin to align with text */
     text-decoration: none;
+    position: relative;
+    z-index: 7;
 }
 
 .btn:hover {
@@ -98,36 +128,37 @@ body {
     position: relative;
     width: 40%;
     height: 300px;
+    z-index: 6; /* Ensure images stay above background */
 }
 
 .salad-img {
     position: relative;
-    width: 400px;
+    width: 500px; /* Increased from 400px */
     z-index: 2;
 }
 
 .lemon, .leaf {
     position: absolute;
-    width: 80px;
+    width: 100px; /* Increased from 80px */
     z-index: 3;
 }
 
 .lemon1 {
     position: absolute;
-    top: -35px;
-    right: 350px;
+    top: -40px;
+    right: 380px;
     z-index: 1; /* below the plate */
 }
 
 .lemon2 {
     top: 220px;
-    right: 560px;
+    right: 550px;
 }
 
 .leaf1 {
     bottom: 80px;
     left: -70px;
-    width: 30px;
+    width: 40px; /* Increased from 30px */
 }
 
 .leaf2 {
@@ -144,7 +175,7 @@ body {
 .leaf4 {
     top: -10px;
     left: 10px;
-    width: 60px;
+    width: 75px; /* Increased from 60px */
 }
 
 .leaf5 {
@@ -159,7 +190,7 @@ body {
 }
 .lemon3 {
     top: 40px;
-    left: -70px; /* Adjust as needed based on your container width */
+    left: -70px;
 }
 
 .lemon4 {
