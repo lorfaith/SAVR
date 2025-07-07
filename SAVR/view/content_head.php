@@ -1,6 +1,5 @@
 <?php
 // You can add PHP logic here if needed
-// For example: session management, database connections, etc.
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,11 +25,11 @@
             <a href="#">Get Involved</a>
         </nav>
         <div class="nav-buttons">
-            <a href="#store" id="store-link">Store</a>
-            <a href="#customer" id="customer-link">Customer</a>
-            <a href="#charity" id="charity-link">Charity</a>
-            <a href="#fda" id="fda-link">FDA</a>
-            <a href="#qa" id="qa-link">QA</a>
+            <a href="#store" id="store-link" class="nav-btn">Store</a>
+            <a href="#customerHead" id="customer-link" class="nav-btn">Customer</a>
+            <a href="#charity" id="charity-link" class="nav-btn">Charity</a>
+            <a href="#fda" id="fda-link" class="nav-btn">FDA</a>
+            <a href="#qa" id="qa-link" class="nav-btn">QA</a>
         </div>
     </header>
 
@@ -40,8 +39,8 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo studio.</p>
             <a href="view/signin.php" class="btn">GET STARTED</a>
         </div>
-        <!-- ALL BACKGROUND PICTURES -->
-       <div class="fresh-image">
+
+        <div class="fresh-image">
             <img src="img/Lemon 1.png" class="lemon lemon1" alt="Lemon slice 1">
             <img src="img/salad.png" alt="Salad Plate" class="salad-img">
             <img src="img/Lemon 1.png" class="lemon lemon2" alt="Lemon slice 2">
@@ -55,5 +54,17 @@
             <img src="img/Leaf 2.png" class="leaf leaf6" alt="Leaf 6">
         </div>
     </section>
+
+    <!-- JavaScript to activate nav button -->
+    <script>
+        const navButtons = document.querySelectorAll('.nav-buttons .nav-btn');
+
+        navButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                navButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>

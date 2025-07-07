@@ -65,8 +65,16 @@ body {
     z-index: 11; /* Ensure buttons stay above background */
 }
 
+/* Active nav button style */
+.nav-buttons a.active {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.1rem 0.8rem;
+    border-radius: 2rem;
+}
+
 .nav-buttons a:hover {
-    background-color: #4CAF50; /* Green background */
+    background-color: #4CAF50; 
     border-radius: 2rem; 
     padding: 0.1rem 0.8rem; 
     color: white;
